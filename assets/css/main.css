@@ -237,8 +237,8 @@ h2 > a {
   color: black;
 }
 
-.project__title__icon {
-  display: none;
+.project__title > svg {
+  visibility: hidden;
 }
 
 .project__title:hover,
@@ -246,9 +246,12 @@ h2 > a {
   color: gray;
 }
 
-.project__title:hover,
-.project__title:focus > .project__title__icon {
-  display: inline;
+.project__title:hover > svg {
+  visibility: visible;
+}
+
+.project__title:focus > svg {
+  visibility: visible;
 }
 
 .project__title__text {
