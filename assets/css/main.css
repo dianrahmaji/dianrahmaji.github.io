@@ -151,7 +151,8 @@ h2 > a {
 
 .experience__list,
 .resume {
-  width: 768px;
+  max-width: 768px;
+  width: 100%;
   margin: 48px auto 0;
 }
 
@@ -203,10 +204,12 @@ h2 > a {
   margin-top: 0;
 }
 
-.experience__date {
-  position: absolute;
-  top: 0;
-  right: 0;
+@media (min-width: 640px) {
+  .experience__date {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .project {
